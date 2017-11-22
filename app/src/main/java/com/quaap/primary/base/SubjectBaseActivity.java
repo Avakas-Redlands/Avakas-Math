@@ -61,6 +61,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
+import static com.quaap.primary.R.color.answer_color;
+
 public abstract class SubjectBaseActivity extends CommonBaseActivity {
 
     // Things here are common to all level activities.
@@ -495,6 +497,7 @@ public abstract class SubjectBaseActivity extends CommonBaseActivity {
             Button ansbutt = new Button(this);
             buttons.add(ansbutt);
             ansbutt.setEnabled(false);
+            ansbutt.setTextColor(getResources().getColor(answer_color));
             ansbutt.setTypeface(Typeface.MONOSPACE);
             if (fontsize > 0) {
                 ansbutt.setTextSize(TypedValue.COMPLEX_UNIT_PX, fontsize);

@@ -25,6 +25,7 @@ import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -60,6 +61,9 @@ public class MainActivity extends CommonBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
 
         appdata = AppData.getAppData(this);
@@ -167,14 +171,14 @@ public class MainActivity extends CommonBaseActivity {
 
         updateSubjectList();
 
-        Button goButton = (Button) findViewById(R.id.login_button);
+//        Button goButton = (Button) findViewById(R.id.login_button);
 
-        goButton.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                checkFirstRun();
-            }
-        }, 1000);
+//        goButton.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                checkFirstRun();
+//            }
+//        }, 1000);
 
 
     }
@@ -233,7 +237,7 @@ public class MainActivity extends CommonBaseActivity {
 //                }
             }
             subjectlist.setSelected(sub);
-            setSubjectDesc(sub);
+//            setSubjectDesc(sub);
         }
     }
 
@@ -441,7 +445,7 @@ public class MainActivity extends CommonBaseActivity {
 
             updateSubjectList();
             if (subjectlist.hasSelected()) {
-                goButton.setEnabled(true);
+//                goButton.setEnabled(true);
             }
         } else {
             showSteps2and3(false);

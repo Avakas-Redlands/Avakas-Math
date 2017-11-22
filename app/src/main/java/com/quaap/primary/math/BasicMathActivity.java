@@ -306,7 +306,7 @@ public class BasicMathActivity extends StdGameActivity implements SubjectBaseAct
 
 
 
-        makeChoiceButtons(answerarea, answers, this, fontsize, null, Gravity.RIGHT);
+        makeChoiceButtons(answerarea, answers, this, fontsize, null, Gravity.CENTER);
 
     }
 

@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="4dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
     android:id="@+id/horz_list_view">
 
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="101dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_weight="6"
+        android:layout_weight="4.49"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
         android:scrollIndicators="start|end"
         android:id="@+id/horz_list_scroller">
@@ -27,16 +29,15 @@
     </HorizontalScrollView>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/add_item"
-        app:srcCompat="@android:drawable/ic_input_add"
         android:id="@+id/add_list_item_button"
-        android:layout_weight="1"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:clickable="true"
+        android:contentDescription="@string/add_item"
         android:padding="4dp"
         android:scaleX="1.5"
         android:scaleY="1.5"
-        android:layout_gravity="center" />
+        app:srcCompat="@mipmap/ic_add_user"/>
 
 </LinearLayout>

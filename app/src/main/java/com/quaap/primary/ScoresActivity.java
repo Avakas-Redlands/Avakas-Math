@@ -17,6 +17,7 @@ package com.quaap.primary;
  */
 import android.os.Bundle;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -37,6 +38,10 @@ public class ScoresActivity extends CommonBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_scores);
 
         //ViewGroup scroll = (ViewGroup) findViewById(R.id.scores_scroll);

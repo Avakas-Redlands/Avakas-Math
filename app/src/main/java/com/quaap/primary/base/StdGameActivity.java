@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -58,6 +59,10 @@ public abstract class StdGameActivity extends SubjectBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         ViewGroup probarea = (ViewGroup) findViewById(R.id.problem_area);
 
         LayoutInflater.from(this).inflate(mProblemView, probarea);
@@ -66,7 +71,6 @@ public abstract class StdGameActivity extends SubjectBaseActivity {
 
     @Override
     protected void onPause() {
-
 
         cancelHint();
 
@@ -83,9 +87,6 @@ public abstract class StdGameActivity extends SubjectBaseActivity {
     protected void onResume() {
         super.onResume();
         timer = new Timer();
-
-
-
     }
 
     @Override

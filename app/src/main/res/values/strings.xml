@@ -107,6 +107,10 @@
     <string name="fuzzy_o_clock">" o'clock"</string>
     <string name="fuzzy_closest_message">What is the closest time?</string>
     <string name="doubles">"Doubles. "</string>
+    <string name="Easy">EASY</string>
+    <string name="Normal">NORMAL</string>
+    <string name="Hard">HARD</string>
+    <string name="Expert">EXPERT</string>
 
 
 </resources>

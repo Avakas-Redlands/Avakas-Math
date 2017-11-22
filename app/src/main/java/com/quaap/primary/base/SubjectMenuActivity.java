@@ -9,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -61,6 +62,9 @@ public class SubjectMenuActivity extends CommonBaseActivity implements Button.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //Log.d("onCreate", "onCreate savedInstanceState=" + (savedInstanceState==null?"null":"notnull"));
         if (savedInstanceState == null) {

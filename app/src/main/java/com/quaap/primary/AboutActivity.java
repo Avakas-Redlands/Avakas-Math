@@ -21,6 +21,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.quaap.primary.base.CommonBaseActivity;
@@ -30,6 +31,10 @@ public class AboutActivity extends CommonBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_about);
 
 
