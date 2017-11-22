@@ -36,4 +36,8 @@ Language Arts Features:
 ![Math 1](http://quaap.com/D/media/pe.png)
 ![Math 2](http://quaap.com/D/media/pi.png)
 
+## Updated for Avakas:
+
+<img src='https://i.imgur.com/poqh1wu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
